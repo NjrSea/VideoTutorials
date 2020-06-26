@@ -16,6 +16,15 @@ func initializeCell<T: CellInitializable>(fromType type: T.Type, reuseIdentifier
     return T.init(reuseIdentifier: reuseIdentifier)
 }
 
+@objc protocol XPTableViewDelegate: UIScrollViewDelegate {
+    func xpTableView(heightForRow row: UInt) -> CGFloat
+}
+
+protocol XPTableViewDataSource: class {
+    func numberOfRows(in xpTableView:XPTableView) -> Int
+    func xpTableView(tableView: XPTableView, cellForRowAtIndex: Int) -> XPTableViewCell
+}
+
 class XPTableViewCell: UIView, CellInitializable {
 
     var reuseIdentifier: String = "XPTableViewCell"
@@ -29,15 +38,6 @@ class XPTableViewCell: UIView, CellInitializable {
         super.init(frame: CGRect.zero)
     }
 
-}
-
-@objc protocol XPTableViewDelegate: UIScrollViewDelegate {
-    func xpTableView(heightForRow row: UInt) -> CGFloat
-}
-
-protocol XPTableViewDataSource: class {
-    func numberOfRows(in xpTableView:XPTableView) -> Int
-    func xpTableView(tableView: XPTableView, cellForRowAtIndex: Int) -> XPTableViewCell
 }
 
 class XPTableView: UIScrollView {
