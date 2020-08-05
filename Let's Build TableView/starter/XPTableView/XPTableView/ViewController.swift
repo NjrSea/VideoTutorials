@@ -17,16 +17,44 @@ extension UIColor {
     }
 }
 
-class ViewController: UIViewController {
+class CustomCell: XPTableViewCell {
+
+}
+
+class ViewController: UIViewController, XPTableViewDelegate, XPTableViewDataSource {
+
+    private var tableView: XPTableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // setup tableView
+        tableView = XPTableView()
+        tableView.xpDelegate = self
+        tableView.xpDataSource = self
+        tableView.frame = view.bounds
+        tableView.registerCell(cellClass: XPTableViewCell.self, forReuseIdentifier: "cell")
+        view.addSubview(tableView)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
 
+    // MARK: XPTableViewDelegate, XPTableViewDataSource
+
+    func xpTableView(heightForRow row: UInt) -> CGFloat {
+        return CGFloat(20 * row)
+    }
+
+    func numberOfRows(in xpTableView: XPTableView) -> Int {
+        return 30
+    }
+
+    func xpTableView(tableView: XPTableView, cellForRowAtIndex: Int) -> XPTableViewCell {
+        let cell = tableView.dequeueReusableCell(reuseIdentifier: "cell")
+        cell?.backgroundColor = UIColor.random
+        return cell!
     }
 
 }
