@@ -1,0 +1,89 @@
+语言
+    Objective-C
+        https://www.runoob.com/w3cnote/objective-c-tutorial.html
+    Swift
+        Swift开发手册 https://github.com/KwaiAppTeam/SwiftPamphletApp
+        【iOS开发入门】Swift语言入门  https://www.bilibili.com/video/BV1A54y1a7j3   
+    内存管理
+        栈和堆
+            https://blog.csdn.net/u012836896/article/details/89973820
+        值类型 vs 引用类型
+            【iOS开发入门】10.Swift语言入门-类与结构体 https://www.bilibili.com/video/BV1V44y167no?spm_id_from=333.999.0.0
+        循环引用
+            https://zhuanlan.zhihu.com/p/22299084
+框架
+    UIKit
+        UI控件的使用
+            https://developer.apple.com/documentation/uikit/views_and_controls
+            https://www.bilibili.com/video/BV1Fh411Y7K6
+        UIViewController
+            生命周期
+            https://developer.apple.com/documentation/uikit/view_controllers
+        App生命周期
+            https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle
+        动画
+            https://github.com/qunten/iOS-Core-Animation-Advanced-Techniques
+        手势识别
+            https://www.jianshu.com/p/399fb18ad551
+    Foundation
+        通知 (NSNotification)
+            https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/Notifications/Introduction/introNotifications.html
+        文件操作 (NSFileManager)
+            https://developer.apple.com/documentation/foundation/filemanager
+        多线程
+            GCD(Grand Central Dispatch )
+                https://www.jianshu.com/p/2d57c72016c6
+            NSThread
+                https://www.jianshu.com/p/686dbf4bbb52
+            NSOperation
+                https://www.jianshu.com/p/cffd3ace0653
+            NSThread、GCD、NSOperation多线程编程总结
+                https://blog.csdn.net/cordova/article/details/69060085
+            主线程 和 其他线程的区别
+                UI只能在主线程操作
+    音视频 （AVFoundation）
+        https://www.cnblogs.com/mtystar/p/6771621.html
+网络编程
+    JSON
+        https://www.w3school.com.cn/js/js_json_intro.asp
+    HTTP协议
+        图解HTTP https://book.douban.com/subject/25863515/
+    TCP/IP
+        图解TCP/IP https://book.douban.com/subject/24737674/
+    URLSession （系统提供的API）
+        https://developer.apple.com/documentation/foundation/url_loading_system/fetching_website_data_into_memory
+    Alamofire (网络库)
+        https://github.com/Alamofire/Alamofire
+架构
+    MVC
+        https://www.ruanyifeng.com/blog/2007/11/mvc.html
+    MVVM
+        https://www.cnblogs.com/jys509/p/13257669.html
+    Redux（可选）
+        https://github.com/ReSwift/ReSwift
+        https://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html
+    Viper（可选）
+        https://www.jianshu.com/p/340b39c6d256
+持久化
+    NSUserDefaults
+        简单的KV存储
+            https://www.jianshu.com/p/5948607b3f67
+    数据库（可选）
+        sqlite
+            https://www.runoob.com/sqlite/sqlite-tutorial.html
+        Realm
+            https://github.com/realm/realm-swift
+工具链
+    版本管理工具
+        git
+            https://www.runoob.com/git/git-tutorial.html
+    Cocoapods (包管理工具)
+        https://www.bilibili.com/video/BV1Lf4y1G7nC
+    终端的使用
+        https://zhuanlan.zhihu.com/p/435856183
+    证书&签名&真机调试
+        https://developer.apple.com/cn/support/code-signing/
+学习资源
+    https://objccn.io/issues/
+    https://nshipster.cn/
+    https://developer.apple.com/videos/
